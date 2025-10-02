@@ -1,0 +1,16 @@
+# YOLOv8 Dataset Configuration
+# Update the paths and class names based on your specific use case
+
+# Dataset paths (relative to this file)
+path: ../data_labeled  # dataset root dir
+train: images  # train images (relative to 'path')
+val: images    # val images (relative to 'path') - for MVP, using same as train
+
+# Classes
+names:
+  0: outlet  # Change this to your target object (e.g., 'door', 'window', 'fixture')
+
+# Notes:
+# - For MVP, we're using the same images for training and validation
+# - In production, split your data into separate train/val/test sets
+# - Add more classes as needed (e.g., 1: door, 2: window, etc.)

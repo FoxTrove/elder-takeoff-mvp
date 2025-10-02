@@ -51,6 +51,12 @@ data_labeled/images/*.png
 data_labeled/images/*.jpg
 data_labeled/images/*.jpeg
 data_labeled/labels/*.txt
+data_holding/*.png
+data_holding/*.jpg
+data_holding/*.jpeg
+
+# PDFs (source files)
+pdfs/*.pdf
 
 # But keep README files
 !data_raw/README.md

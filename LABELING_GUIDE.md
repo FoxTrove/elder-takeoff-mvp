@@ -20,6 +20,43 @@ labelImg
 3. **Switch to YOLO Format**: Click the "PascalVOC" button until it shows "YOLO"
 4. **Enable Auto-Save**: Check "View" → "Auto Save mode" (optional but recommended)
 
+### Using Marked-Up Drawings as Reference (Highly Recommended!)
+
+**If Elder Construction provided marked-up drawings from their manual takeoff process:**
+
+1. **Open marked-up drawing** in Preview or PDF viewer
+2. **Position it next to LabelImg window** (dual monitor ideal, or side-by-side)
+3. **In LabelImg, draw boxes where Elder marked** objects on their drawing
+4. **Match Elder's judgment** on what to count and what to skip
+5. **Verify count** matches Elder's takeoff spreadsheet
+
+**Why this is valuable:**
+- ✅ Captures Elder's expertise and identification standards
+- ✅ Shows which symbols Elder counts vs. skips
+- ✅ Reveals how Elder handles edge cases and ambiguous situations
+- ✅ Trains AI to replicate Elder's specific process
+- ✅ Faster labeling (just copy Elder's marks)
+- ✅ Higher accuracy aligned with Elder's standards
+
+**Example workflow:**
+```
+Left screen: LabelImg with clean blueprint image
+Right screen: Elder's marked-up drawing showing circled outlets
+Reference: Spreadsheet showing "Floor 1: 45 outlets"
+
+Process:
+- See Elder circled outlet at location X
+- Draw box at same location in LabelImg
+- Label it "outlet"
+- Repeat for all Elder's marks
+- Verify: 45 boxes = 45 in spreadsheet ✅
+```
+
+**If marked-up drawings aren't available:**
+- Use takeoff spreadsheet counts as your guide
+- Find and label objects yourself
+- Verify your count matches the spreadsheet
+
 ### Labeling Workflow
 
 #### For Each Image:

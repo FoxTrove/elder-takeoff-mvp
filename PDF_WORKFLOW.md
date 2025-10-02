@@ -15,7 +15,8 @@ Your PDFs → Convert to Images → Holding Area → Review → Select → Proce
 1. **Convert PDF** → All pages extracted to `data_holding/`
 2. **Review images** → Look at all pages in Finder/Preview
 3. **Select relevant pages** → Copy only the pages you want to `data_raw/`
-4. **Label & Train** → Process selected images with AI
+4. **Gather marked-up drawings** → If Elder provided them (highly valuable!)
+5. **Label & Train** → Process selected images with AI using marked-up drawings as reference
 
 ---
 
